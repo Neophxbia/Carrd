@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.rectangle {
+    height: 250px;
+    width: inherit;
+    background-image: url(Images/banner.jpg);
+    background-size: cover;
+    filter: blur(2px);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    margin-top: 0;
+}
+
+.pfp {
+    background-image: url(Images/PFP.png);
+    height: 250px;
+    width: 250px;
+    scale: 150%;
+    border-radius: 175px;
+    background-size: cover;
+    margin-top: -5%;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.playlist {
+    margin-right: 25%;
+    margin-left: 25%;
+    position: auto;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
+body {
+    align-items: center;
+    background-image: url(Images/background.jpg);
+    -webkit-background-composite: border;
+    background-color: rgb(80, 80, 80);
+    background-blend-mode: multiply;
+    height: inherit;
+    width: inherit;
+    background-size: cover;
+}
+
+.button-row {
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+}
+
+.button {
+    background-color: rgba(22, 46, 26, 0);
+    font-family: inherit;
+    font-size: 24px;
+    height: inherit;
+    width: inherit;
+    transform: all 1s;
+    border: none;
+    border-radius: 50%;
+    margin: 30;
+}
+
+.image {
+    scale: auto;
+    height: 100px;
+    width: 100px;
+    filter: invert(0.5);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    filter: brightness(0.85);
+    transform: scale(1);
+}
+
+
+.text-button {
+    text-align: center;
+}
+
+.button.important {
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    font-variant: small-caps;
+    margin: 20px;
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
